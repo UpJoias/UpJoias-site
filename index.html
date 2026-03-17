@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="UP Joias - Elegância e Sofisticação em Cada Detalhe. Alianças, anéis e pingentes de formatura em ouro e prata.">
     <meta name="keywords" content="joias, ouro, prata, anéis, alianças, formatura, pingentes">
-
     <title>UP Joias - Elegância e Sofisticação</title>
 
+    <!-- Facebook Pixel -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -17,180 +17,361 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-
     fbq('init', '893817430300370');
     fbq('track', 'PageView');
     </script>
     <noscript>
         <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=893817430300370&ev=PageView&noscript=1"/>
     </noscript>
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
-<header>
-    <div class="logo-container">
-        <img src="images/logo.png" alt="UP Joias Logo" class="logo-image">
+<!-- ── FAIXA DE PROMOÇÕES ── -->
+<div class="promo-bar">
+    <div class="promo-track">
+        <span>✦ Parcelamento em até 10x sem juros</span>
+        <span>✦ Garantia Eterna no Metal</span>
+        <span>✦ Atendimento personalizado via WhatsApp</span>
+        <span>✦ Joias em Ouro e Prata com qualidade certificada</span>
+        <span>✦ Parcelamento em até 10x sem juros</span>
+        <span>✦ Garantia Eterna no Metal</span>
+        <span>✦ Atendimento personalizado via WhatsApp</span>
+        <span>✦ Joias em Ouro e Prata com qualidade certificada</span>
     </div>
-    <div class="tagline">Elegância e Sofisticação em Cada Detalhe</div>
+</div>
+
+<!-- ── HEADER ── -->
+<header>
+    <div class="header-inner">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="UP Joias Logo" class="logo-image" onerror="this.style.display='none'; document.querySelector('.logo-text-fallback').style.display='block'">
+            <div class="logo-text-fallback" style="display:none">UP JOIAS</div>
+        </div>
+        <div class="tagline">Elegância e Sofisticação em Cada Detalhe</div>
+    </div>
 </header>
 
-<section class="features">
-    <div class="container">
-        <div class="features-grid">
-            <div class="feature-item">
-                <i class="fas fa-credit-card"></i>
-                <h3>Parcelamento sem juros</h3>
-                <p>Em até 10x no cartão</p>
+<!-- ── HERO ── -->
+<section class="hero">
+    <div class="hero-content">
+        <p class="hero-eyebrow">Nova Coleção</p>
+        <h1>Joias que contam<br><em>a sua história</em></h1>
+        <p class="hero-sub">Ouro e Prata de qualidade excepcional para celebrar seus momentos mais especiais.</p>
+        <a href="#produtos" class="hero-btn">Ver Coleção</a>
+    </div>
+    <div class="hero-deco">
+        <div class="hero-ring ring1"></div>
+        <div class="hero-ring ring2"></div>
+        <div class="hero-ring ring3"></div>
+    </div>
+</section>
+
+<!-- ── TRUST BAR ── -->
+<section class="trust-bar">
+    <div class="trust-inner">
+        <div class="trust-item">
+            <i class="fas fa-credit-card"></i>
+            <div>
+                <strong>10x sem juros</strong>
+                <span>No cartão de crédito</span>
             </div>
-            <div class="feature-item">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Garantia Eterna no Metal</h3>
-                <p>Suas joias protegidas</p>
+        </div>
+        <div class="trust-item">
+            <i class="fas fa-shield-alt"></i>
+            <div>
+                <strong>Garantia Eterna</strong>
+                <span>No metal da joia</span>
             </div>
-            <div class="feature-item">
-                <i class="fas fa-headset"></i>
-                <h3>Atendimento Personalizado</h3>
-                <p>Especialistas à sua disposição</p>
+        </div>
+        <div class="trust-item">
+            <i class="fas fa-gem"></i>
+            <div>
+                <strong>Ouro e Prata</strong>
+                <span>Qualidade garantida</span>
+            </div>
+        </div>
+        <div class="trust-item">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+                <strong>Atendimento VIP</strong>
+                <span>Direto no WhatsApp</span>
             </div>
         </div>
     </div>
 </section>
 
-<div class="container">
-    <section class="intro">
-        <h2>Bem-vindo à UP Joias</h2>
-        <p>Descubra nossa coleção exclusiva de joias em ouro e prata. Cada peça é cuidadosamente selecionada para celebrar seus momentos mais especiais com elegância e qualidade excepcional.</p>
-    </section>
+<!-- ── PRODUTOS ── -->
+<section class="products" id="produtos">
+    <div class="container">
+        <div class="section-header">
+            <p class="section-eyebrow">Nossa Coleção</p>
+            <h2>Peças que encantam</h2>
+        </div>
 
-    <section class="products">
-        <h2>Nossa Coleção</h2>
         <div class="products-grid">
 
             <div class="product-card">
-                <div class="product-image"><img src="images/pingente-formatura.jpg" alt="Pingentes de Formatura"></div>
+                <div class="product-image">
+                    <img src="images/pingente-formatura.jpg" alt="Pingentes de Formatura">
+                    <div class="product-badge">Mais Vendido</div>
+                </div>
                 <div class="product-info">
                     <h3 class="product-name">Pingentes de Formatura de Prata</h3>
                     <p class="product-description">Celebre sua conquista com estilo! Pingentes personalizados com a cor e o símbolo do curso.</p>
-                    <div class="product-price">A partir de R$ 178,00</div>
-                    <p class="price-detail">10x sem juros no cartão</p>
-                    <a href="#" class="whatsapp-btn" onclick="enviarWhats('Olá! Tenho interesse nos Pingentes de Formatura de Prata')">💬 Consultar no WhatsApp</a>
+                    <div class="product-price-row">
+                        <div class="product-price">A partir de <strong>R$ 189,00</strong></div>
+                        <p class="price-detail">ou 10x de R$ 18,90</p>
+                    </div>
+                    <a href="#" class="whatsapp-btn" onclick="enviarWhats('Olá! Tenho interesse nos Pingentes de Formatura de Prata')">
+                        <i class="fab fa-whatsapp"></i> Consultar no WhatsApp
+                    </a>
                 </div>
             </div>
 
             <div class="product-card">
-                <div class="product-image"><img src="images/anel-formatura.jpg" alt="Anéis de Formatura"></div>
+                <div class="product-image">
+                    <img src="images/anel-formatura.jpg" alt="Anéis de Formatura">
+                </div>
                 <div class="product-info">
                     <h3 class="product-name">Anéis de Formatura de Prata</h3>
                     <p class="product-description">Joias para eternizar este momento de esforço e determinação.</p>
-                    <div class="product-price">A partir de R$ 279,00</div>
-                    <p class="price-detail">10x sem juros no cartão</p>
-                    <a href="#" class="whatsapp-btn" onclick="enviarWhats('Olá! Tenho interesse nos Anéis de Formatura de Prata')">💬 Consultar no WhatsApp</a>
+                    <div class="product-price-row">
+                        <div class="product-price">A partir de <strong>R$ 279,00</strong></div>
+                        <p class="price-detail">ou 10x de R$ 27,90</p>
+                    </div>
+                    <a href="#" class="whatsapp-btn" onclick="enviarWhats('Olá! Tenho interesse nos Anéis de Formatura de Prata')">
+                        <i class="fab fa-whatsapp"></i> Consultar no WhatsApp
+                    </a>
                 </div>
             </div>
 
             <div class="product-card">
-                <div class="product-image"><img src="images/alianca-prata.jpg" alt="Alianças de Prata"></div>
+                <div class="product-image">
+                    <img src="images/alianca-prata.jpg" alt="Alianças de Prata">
+                </div>
                 <div class="product-info">
                     <h3 class="product-name">Alianças de Prata</h3>
                     <p class="product-description">Celebre o amor com um preço acessível e justo.</p>
-                    <div class="product-price">A partir de R$ 112,00</div>
-                    <p class="price-detail">10x sem juros no cartão</p>
-                    <a href="#" class="whatsapp-btn" onclick="enviarWhats('Olá! Tenho interesse nas Alianças de Prata')">💬 Consultar no WhatsApp</a>
+                    <div class="product-price-row">
+                        <div class="product-price">A partir de <strong>R$ 112,00</strong></div>
+                        <p class="price-detail">ou 10x de R$ 11,20</p>
+                    </div>
+                    <a href="#" class="whatsapp-btn" onclick="enviarWhats('Olá! Tenho interesse nas Alianças de Prata')">
+                        <i class="fab fa-whatsapp"></i> Consultar no WhatsApp
+                    </a>
                 </div>
             </div>
 
-            <div class="product-card">
-                <div class="product-image"><img src="images/alianca-ouro.jpg" alt="Alianças de Ouro"></div>
+            <div class="product-card product-card--highlight">
+                <div class="product-image">
+                    <img src="images/alianca-ouro.jpg" alt="Alianças de Ouro">
+                    <div class="product-badge badge-premium">Premium</div>
+                </div>
                 <div class="product-info">
                     <h3 class="product-name">Alianças de Ouro</h3>
-                    <p class="product-description">Alianças confeccionadas em ouro 10k e 18k. Metal mais precioso com beleza sem igual.</p>
-                    <div class="product-price">A partir de R$ 1.041,00</div>
-                    <p class="price-detail">10x sem juros no cartão</p>
-                    <a href="#" class="whatsapp-btn" onclick="enviarWhats('Olá! Tenho interesse nas Alianças de Ouro')">💬 Consultar no WhatsApp</a>
+                    <p class="product-description">Confeccionadas em ouro 10k e 18k. O metal mais precioso com beleza sem igual.</p>
+                    <div class="product-price-row">
+                        <div class="product-price">A partir de <strong>R$ 1.041,00</strong></div>
+                        <p class="price-detail">ou 10x de R$ 104,10</p>
+                    </div>
+                    <a href="#" class="whatsapp-btn" onclick="enviarWhats('Olá! Tenho interesse nas Alianças de Ouro')">
+                        <i class="fab fa-whatsapp"></i> Consultar no WhatsApp
+                    </a>
                 </div>
             </div>
 
             <div class="product-card">
-                <div class="product-image"><img src="images/anel-prata.jpg" alt="Anéis de Prata"></div>
+                <div class="product-image">
+                    <img src="images/anel-prata.jpg" alt="Anéis de Prata">
+                    <div class="product-badge badge-new">Novo</div>
+                </div>
                 <div class="product-info">
                     <h3 class="product-name">Anéis de Prata</h3>
                     <p class="product-description">Anéis belíssimos, de alta qualidade e conforto, sempre na moda.</p>
-                    <div class="product-price">A partir de R$ 69,00</div>
-                    <p class="price-detail">10x sem juros no cartão</p>
-                    <a href="#" class="whatsapp-btn" onclick="enviarWhats('Olá! Tenho interesse nos Anéis de Prata')">💬 Consultar no WhatsApp</a>
+                    <div class="product-price-row">
+                        <div class="product-price">A partir de <strong>R$ 69,00</strong></div>
+                        <p class="price-detail">ou 10x de R$ 6,90</p>
+                    </div>
+                    <a href="#" class="whatsapp-btn" onclick="enviarWhats('Olá! Tenho interesse nos Anéis de Prata')">
+                        <i class="fab fa-whatsapp"></i> Consultar no WhatsApp
+                    </a>
                 </div>
             </div>
 
             <div class="product-card">
-                <div class="product-image"><img src="images/anel-ouro.jpg" alt="Anéis de Ouro"></div>
+                <div class="product-image">
+                    <img src="images/anel-ouro.jpg" alt="Anéis de Ouro">
+                </div>
                 <div class="product-info">
                     <h3 class="product-name">Anéis de Ouro</h3>
                     <p class="product-description">Anéis trabalhados, acessórios de alta durabilidade que passam de geração em geração.</p>
-                    <div class="product-price">A partir de R$ 700,00</div>
-                    <p class="price-detail">10x sem juros no cartão</p>
-                    <a href="#" class="whatsapp-btn" onclick="enviarWhats('Olá! Tenho interesse nos Anéis de Ouro')">💬 Consultar no WhatsApp</a>
+                    <div class="product-price-row">
+                        <div class="product-price">A partir de <strong>R$ 700,00</strong></div>
+                        <p class="price-detail">ou 10x de R$ 70,00</p>
+                    </div>
+                    <a href="#" class="whatsapp-btn" onclick="enviarWhats('Olá! Tenho interesse nos Anéis de Ouro')">
+                        <i class="fab fa-whatsapp"></i> Consultar no WhatsApp
+                    </a>
                 </div>
             </div>
 
         </div>
-    </section>
-
-    <section class="testimonials">
-        <h2>O Que Nossos Clientes Dizem</h2>
-        <div class="testimonials-grid">
-            <div class="testimonial-card"><img src="images/comentario1.jpg" alt="Depoimento 1" class="testimonial-image"></div>
-            <div class="testimonial-card"><img src="images/comentario2.jpg" alt="Depoimento 2" class="testimonial-image"></div>
-            <div class="testimonial-card"><img src="images/comentario3.jpg" alt="Depoimento 3" class="testimonial-image"></div>
-        </div>
-    </section>
-</div>
-
-<section class="cta">
-    <h2>Encontre a Joia Perfeita para Você</h2>
-    <p>Fale conosco pelo WhatsApp e receba atendimento personalizado.</p>
-    <a href="#" class="cta-btn" onclick="enviarWhats('Olá! Gostaria de conhecer melhor as joias da UP Joias')">💬 Consultar Disponibilidade e Preços</a>
+    </div>
 </section>
 
-<footer>
-    <div class="footer-content">
-        <div class="footer-section">
-            <h3>UP Joias</h3>
-            <p>upjoiascomercial@gmail.com</p>
-            <p>Elegância que valoriza cada momento</p>
+<!-- ── BANNER MIDDLE CTA ── -->
+<section class="mid-cta">
+    <div class="mid-cta-inner">
+        <div class="mid-cta-deco"></div>
+        <div class="mid-cta-text">
+            <p class="mid-cta-eyebrow">Atendimento personalizado</p>
+            <h2>Encontre a joia perfeita para você</h2>
+            <p>Nossa equipe de especialistas está pronta para ajudá-lo a escolher a peça ideal para cada ocasião especial.</p>
+            <a href="#" class="cta-btn" onclick="enviarWhats('Olá! Gostaria de atendimento personalizado da UP Joias')">
+                <i class="fab fa-whatsapp"></i> Falar com um Especialista
+            </a>
         </div>
-        <div class="footer-section">
-            <h3>Localização</h3>
-            <p><i class="fas fa-map-marker-alt"></i> Canoas - Rua Tiradentes, 381, loja 57</p>
+    </div>
+</section>
+
+<!-- ── DIFERENCIAIS ── -->
+<section class="diferenciais">
+    <div class="container">
+        <div class="section-header">
+            <p class="section-eyebrow">Por que nos escolher</p>
+            <h2>A UP Joias é diferente</h2>
         </div>
-        <div class="footer-section">
-            <h3>Redes Sociais</h3>
-            <div class="social-links">
-                <a href="https://www.facebook.com/Upjoiascomercial" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/Upjoiascomercial" target="_blank"><i class="fab fa-instagram"></i></a>
+        <div class="diferenciais-grid">
+            <div class="diferencial-item">
+                <div class="diferencial-icon"><i class="fas fa-award"></i></div>
+                <h3>Qualidade Certificada</h3>
+                <p>Trabalhamos apenas com metais nobres certificados, garantindo a autenticidade e durabilidade de cada peça.</p>
+            </div>
+            <div class="diferencial-item">
+                <div class="diferencial-icon"><i class="fas fa-infinity"></i></div>
+                <h3>Garantia Eterna no Metal</h3>
+                <p>Nossas joias têm garantia vitalícia no metal. Se houver qualquer problema, cuidamos para você.</p>
+            </div>
+            <div class="diferencial-item">
+                <div class="diferencial-icon"><i class="fas fa-paint-brush"></i></div>
+                <h3>Personalização Total</h3>
+                <p>Pingentes e anéis de formatura com o símbolo e as cores do seu curso. Sua conquista, do seu jeito.</p>
+            </div>
+            <div class="diferencial-item">
+                <div class="diferencial-icon"><i class="fas fa-handshake"></i></div>
+                <h3>Atendimento Humano</h3>
+                <p>Você fala direto com um especialista pelo WhatsApp. Sem chatbots. Atendimento real e dedicado.</p>
             </div>
         </div>
     </div>
+</section>
+
+<!-- ── DEPOIMENTOS ── -->
+<section class="testimonials">
+    <div class="container">
+        <div class="section-header">
+            <p class="section-eyebrow">Avaliações</p>
+            <h2>O que nossos clientes dizem</h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <img src="images/comentario1.jpg" alt="Depoimento 1" class="testimonial-image">
+            </div>
+            <div class="testimonial-card">
+                <img src="images/comentario2.jpg" alt="Depoimento 2" class="testimonial-image">
+            </div>
+            <div class="testimonial-card">
+                <img src="images/comentario3.jpg" alt="Depoimento 3" class="testimonial-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── CTA FINAL ── -->
+<section class="cta-final">
+    <div class="cta-final-inner">
+        <h2>Vamos encontrar a joia perfeita?</h2>
+        <p>Consulte disponibilidade, tire dúvidas e receba atendimento exclusivo direto no WhatsApp.</p>
+        <a href="#" class="cta-btn cta-btn--large" onclick="enviarWhats('Olá! Vim através do site e gostaria de consultar disponibilidade e preços da UP Joias')">
+            <i class="fab fa-whatsapp"></i> Consultar Disponibilidade e Preços
+        </a>
+        <div class="cta-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span>+500 clientes satisfeitos</span>
+        </div>
+    </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-brand">
+            <div class="footer-logo">UP JOIAS</div>
+            <p>Elegância que valoriza cada momento da sua vida.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/Upjoiascomercial" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/Upjoiascomercial" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" onclick="enviarWhats('Olá!')" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h4>Contato</h4>
+            <p><i class="fas fa-envelope"></i> upjoiascomercial@gmail.com</p>
+            <p><i class="fab fa-whatsapp"></i> (51) 98019-7453</p>
+        </div>
+        <div class="footer-section">
+            <h4>Localização</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Canoas - RS</p>
+            <p>Rua Tiradentes, 381, loja 57</p>
+        </div>
+        <div class="footer-section">
+            <h4>Nossas Joias</h4>
+            <ul>
+                <li><a href="#" onclick="enviarWhats('Olá! Interesse em Pingentes de Formatura')">Pingentes de Formatura</a></li>
+                <li><a href="#" onclick="enviarWhats('Olá! Interesse em Anéis de Formatura')">Anéis de Formatura</a></li>
+                <li><a href="#" onclick="enviarWhats('Olá! Interesse em Alianças')">Alianças de Prata e Ouro</a></li>
+                <li><a href="#" onclick="enviarWhats('Olá! Interesse em Anéis')">Anéis de Prata e Ouro</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="footer-bottom">
-        <p>&copy; 2021 UP Joias - Todos os direitos reservados. CNPJ: 07.552.627/001-02</p>
+        <p>&copy; 2021 UP Joias — Todos os direitos reservados &nbsp;|&nbsp; CNPJ: 07.552.627/001-02</p>
     </div>
 </footer>
 
-<a href="#" class="whatsapp-float" onclick="enviarWhats('Olá! Vim através do site e gostaria de consultar disponibilidade e preços')">
+<!-- ── FLOATING WHATSAPP ── -->
+<a href="#" class="whatsapp-float" onclick="enviarWhats('Olá! Vim através do site e gostaria de consultar disponibilidade e preços')" aria-label="WhatsApp">
     <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-float-label">Fale Conosco</span>
 </a>
 
 <script>
 function enviarWhats(texto){
-    // Dispara o evento personalizado que configuramos no Meta
     fbq('trackCustom','CliqueWhatsApp');
-
     setTimeout(function(){
         window.location.href = "https://wa.me/5551980197453?text=" + encodeURIComponent(texto);
     }, 500);
 }
+
+// Animate elements on scroll
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.product-card, .diferencial-item, .testimonial-card').forEach(el => {
+    observer.observe(el);
+});
 </script>
 
 </body>
