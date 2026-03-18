@@ -311,14 +311,15 @@ header {
 .product-image {
     position: relative;
     width: 100%;
-    aspect-ratio: 4/5;
+    height: 310px;
+    aspect-ratio: 4/3;
     background: linear-gradient(135deg, #333 0%, #222 100%);
     overflow: hidden;
 }
 
 .product-image img {
     width: 100%;
-    height: 100%;
+    height: 115%;
     object-fit: cover;
     transition: transform 0.5s ease;
 }
@@ -385,7 +386,10 @@ header {
     color: #777;
 }
 
-/* WhatsApp Button */
+/* Botão WhatsApp — texto alternativo mobile */
+.btn-short { display: none; }
+.btn-full  { display: inline; }
+
 .whatsapp-btn {
     display: inline-flex;
     align-items: center;
@@ -562,7 +566,7 @@ header {
 
 .testimonials-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
 }
 
@@ -777,41 +781,80 @@ footer {
 }
 
 @media (max-width: 768px) {
-    header { padding: 1.4rem 1.5rem; position: static; }
+    /* ── Header / Logo ── */
+    header { padding: 0.7rem 1rem; position: static; }
+    .logo-image { max-width: 110px; }
+    .logo-text-fallback { font-size: 1.6rem; letter-spacing: 4px; }
+    .tagline { font-size: 0.6rem; letter-spacing: 0.12em; }
 
-    .hero { min-height: 380px; padding: 4rem 1.5rem; }
+    /* ── Hero ── */
+    .hero { min-height: 320px; padding: 3rem 1.5rem; }
+    .hero h1 { font-size: 2rem; }
 
-    .hero h1 { font-size: 2.4rem; }
+    /* ── Trust Bar ── */
+    .trust-bar { padding: 1rem; }
+    .trust-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.6rem 1rem;
+        max-width: 100%;
+        justify-items: start;
+    }
+    .trust-item {
+        max-width: 100%;
+        flex: unset;
+        gap: 0.4rem;
+        align-items: center;
+    }
+    .trust-item i { font-size: 1rem; flex-shrink: 0; }
+    .trust-item strong { font-size: 0.72rem; line-height: 1.2; }
+    .trust-item span { font-size: 0.63rem; }
 
-    .trust-inner { gap: 1rem; }
-    .trust-item { max-width: 180px; }
-
+    /* ── Products ── */
     .products-grid { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
-
-    .product-image { aspect-ratio: 1/1; }
-
-    .product-badge { font-size: 0.55rem; padding: 3px 7px; top: 8px; left: 8px; letter-spacing: 0; }
-
-    .product-info { padding: 0.75rem; gap: 0.25rem; }
-    .product-name { font-size: 0.88rem; min-height: unset; line-height: 1.3; }
+    .product-image { aspect-ratio: 3/2; }
+    .product-badge { font-size: 0.52rem; padding: 3px 7px; top: 7px; left: 7px; letter-spacing: 0; }
+    .product-info { padding: 0.7rem; gap: 0.2rem; }
+    .product-name { font-size: 0.82rem; min-height: unset; line-height: 1.3; }
     .product-description { display: none; }
-    .product-price { font-size: 0.78rem; }
-    .product-price strong { font-size: 1rem; }
-    .price-detail { font-size: 0.68rem; }
-    .whatsapp-btn { font-size: 0.72rem; padding: 0.6rem 0.4rem; gap: 0.25rem; border-radius: 20px; }
-    .whatsapp-btn i { font-size: 0.85rem; }
 
+    /* Preço na mesma linha */
+    .product-price {
+        font-size: 0.7rem;
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: 0.2rem;
+        line-height: 1.3;
+    }
+    .product-price strong { font-size: 0.95rem; white-space: nowrap; }
+    .price-detail { font-size: 0.63rem; }
+
+    /* Botão compacto com texto curto */
+    .whatsapp-btn {
+        font-size: 0.68rem;
+        padding: 0.55rem 0.5rem;
+        gap: 0.25rem;
+        border-radius: 18px;
+        letter-spacing: 0;
+    }
+    .whatsapp-btn i { font-size: 0.9rem; flex-shrink: 0; }
+    .btn-full  { display: none; }
+    .btn-short { display: inline; }
+
+    /* ── Diferenciais ── */
     .diferenciais-grid { grid-template-columns: 1fr 1fr; }
 
+    /* ── Depoimentos ── */
     .testimonials-grid { grid-template-columns: 1fr; }
 
+    /* ── Footer ── */
     .footer-content { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
-
     .footer-brand .footer-logo { font-size: 1.6rem; }
     .social-links { justify-content: center; }
-
     .footer-section h4 { font-size: 0.9rem; }
 
+    /* ── Float WhatsApp ── */
     .whatsapp-float-label { display: none; }
     .whatsapp-float {
         width: 56px;
@@ -825,5 +868,12 @@ footer {
 
 @media (max-width: 480px) {
     .diferenciais-grid { grid-template-columns: 1fr; }
-    .trust-item { max-width: 100%; flex-basis: 45%; }
+
+    .product-image { aspect-ratio: 4/3;
+     height: 200px; }
+    .product-image img { transform: scale(1.3); transform-origin: center center; }
+    .product-name { font-size: 0.78rem; }
+    .product-price strong { font-size: 0.9rem; }
+    .price-detail { font-size: 0.6rem; }
+    .whatsapp-btn { font-size: 0.65rem; padding: 0.5rem 0.3rem; }
 }
